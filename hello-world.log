@@ -1,0 +1,509 @@
+05:57:56,333 DEBUG SQL:127 - insert into message (TEXT) values (?)
+05:57:56,353 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Taco Tuesday!]
+05:59:34,297 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+05:59:34,301 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+05:59:34,307 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+05:59:34,361 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Cache71] -> [org.hibernate.dialect.Cache71Dialect]
+05:59:34,362 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [CUBRID] -> [org.hibernate.dialect.CUBRIDDialect]
+05:59:34,363 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2] -> [org.hibernate.dialect.DB2Dialect]
+05:59:34,363 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2390] -> [org.hibernate.dialect.DB2390Dialect]
+05:59:34,364 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2390V8] -> [org.hibernate.dialect.DB2390V8Dialect]
+05:59:34,365 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2400] -> [org.hibernate.dialect.DB2400Dialect]
+05:59:34,366 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenFive] -> [org.hibernate.dialect.DerbyTenFiveDialect]
+05:59:34,366 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenSix] -> [org.hibernate.dialect.DerbyTenSixDialect]
+05:59:34,367 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenSeven] -> [org.hibernate.dialect.DerbyTenSevenDialect]
+05:59:34,368 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Firebird] -> [org.hibernate.dialect.FirebirdDialect]
+05:59:34,369 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [FrontBase] -> [org.hibernate.dialect.FrontBaseDialect]
+05:59:34,369 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [H2] -> [org.hibernate.dialect.H2Dialect]
+05:59:34,372 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [HANAColumnStore] -> [org.hibernate.dialect.HANAColumnStoreDialect]
+05:59:34,374 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [HANARowStore] -> [org.hibernate.dialect.HANARowStoreDialect]
+05:59:34,377 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [HSQL] -> [org.hibernate.dialect.HSQLDialect]
+05:59:34,379 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Informix] -> [org.hibernate.dialect.InformixDialect]
+05:59:34,386 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres] -> [org.hibernate.dialect.IngresDialect]
+05:59:34,395 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres9] -> [org.hibernate.dialect.Ingres9Dialect]
+05:59:34,396 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres10] -> [org.hibernate.dialect.Ingres10Dialect]
+05:59:34,397 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Interbase] -> [org.hibernate.dialect.InterbaseDialect]
+05:59:34,397 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [JDataStore] -> [org.hibernate.dialect.JDataStoreDialect]
+05:59:34,399 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Mckoi] -> [org.hibernate.dialect.MckoiDialect]
+05:59:34,400 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MimerSQL] -> [org.hibernate.dialect.MimerSQLDialect]
+05:59:34,404 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -> [org.hibernate.dialect.MySQL5Dialect]
+05:59:34,405 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -> [org.hibernate.dialect.MySQL5InnoDBDialect]
+05:59:34,406 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL57InnoDB] -> [org.hibernate.dialect.MySQL57InnoDBDialect]
+05:59:34,407 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL57] -> [org.hibernate.dialect.MySQL57Dialect]
+05:59:34,408 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL8] -> [org.hibernate.dialect.MySQL8Dialect]
+05:59:34,410 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle8i] -> [org.hibernate.dialect.Oracle8iDialect]
+05:59:34,411 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle9i] -> [org.hibernate.dialect.Oracle9iDialect]
+05:59:34,412 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle10g] -> [org.hibernate.dialect.Oracle10gDialect]
+05:59:34,413 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Pointbase] -> [org.hibernate.dialect.PointbaseDialect]
+05:59:34,416 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgresPlus] -> [org.hibernate.dialect.PostgresPlusDialect]
+05:59:34,416 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL81] -> [org.hibernate.dialect.PostgreSQL81Dialect]
+05:59:34,416 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL82] -> [org.hibernate.dialect.PostgreSQL82Dialect]
+05:59:34,417 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL9] -> [org.hibernate.dialect.PostgreSQL9Dialect]
+05:59:34,418 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Progress] -> [org.hibernate.dialect.ProgressDialect]
+05:59:34,419 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SAPDB] -> [org.hibernate.dialect.SAPDBDialect]
+05:59:34,421 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer] -> [org.hibernate.dialect.SQLServerDialect]
+05:59:34,422 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer2005] -> [org.hibernate.dialect.SQLServer2005Dialect]
+05:59:34,422 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer2008] -> [org.hibernate.dialect.SQLServer2008Dialect]
+05:59:34,423 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Sybase11] -> [org.hibernate.dialect.Sybase11Dialect]
+05:59:34,424 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseAnywhere] -> [org.hibernate.dialect.SybaseAnywhereDialect]
+05:59:34,425 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseASE15] -> [org.hibernate.dialect.SybaseASE15Dialect]
+05:59:34,426 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseASE157] -> [org.hibernate.dialect.SybaseASE157Dialect]
+05:59:34,427 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Teradata] -> [org.hibernate.dialect.TeradataDialect]
+05:59:34,428 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [TimesTen] -> [org.hibernate.dialect.TimesTenDialect]
+05:59:34,430 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Atomikos] -> [org.hibernate.engine.transaction.jta.platform.internal.AtomikosJtaPlatform]
+05:59:34,430 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.AtomikosJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.AtomikosJtaPlatform]
+05:59:34,431 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Borland] -> [org.hibernate.engine.transaction.jta.platform.internal.BorlandEnterpriseServerJtaPlatform]
+05:59:34,432 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.BorlandEnterpriseServerJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.BorlandEnterpriseServerJtaPlatform]
+05:59:34,433 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Bitronix] -> [org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform]
+05:59:34,433 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.BitronixJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform]
+05:59:34,434 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JBossAS] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+05:59:34,435 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+05:59:34,436 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JBossTS] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+05:59:34,437 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JBossStandAloneJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+05:59:34,438 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JOnAS] -> [org.hibernate.engine.transaction.jta.platform.internal.JOnASJtaPlatform]
+05:59:34,438 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JOnASJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JOnASJtaPlatform]
+05:59:34,440 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JOTM] -> [org.hibernate.engine.transaction.jta.platform.internal.JOTMJtaPlatform]
+05:59:34,440 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JOTMJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JOTMJtaPlatform]
+05:59:34,441 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JRun4] -> [org.hibernate.engine.transaction.jta.platform.internal.JRun4JtaPlatform]
+05:59:34,442 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JRun4JtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JRun4JtaPlatform]
+05:59:34,443 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [OC4J] -> [org.hibernate.engine.transaction.jta.platform.internal.OC4JJtaPlatform]
+05:59:34,444 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.OC4JJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.OC4JJtaPlatform]
+05:59:34,445 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Orion] -> [org.hibernate.engine.transaction.jta.platform.internal.OrionJtaPlatform]
+05:59:34,445 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.OrionJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.OrionJtaPlatform]
+05:59:34,447 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Resin] -> [org.hibernate.engine.transaction.jta.platform.internal.ResinJtaPlatform]
+05:59:34,448 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.ResinJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.ResinJtaPlatform]
+05:59:34,449 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [SapNetWeaver] -> [org.hibernate.engine.transaction.jta.platform.internal.SapNetWeaverJtaPlatform]
+05:59:34,450 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.SapNetWeaverJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.SapNetWeaverJtaPlatform]
+05:59:34,452 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [SunOne] -> [org.hibernate.engine.transaction.jta.platform.internal.SunOneJtaPlatform]
+05:59:34,454 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.SunOneJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.SunOneJtaPlatform]
+05:59:34,455 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Weblogic] -> [org.hibernate.engine.transaction.jta.platform.internal.WeblogicJtaPlatform]
+05:59:34,456 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WeblogicJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WeblogicJtaPlatform]
+05:59:34,456 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphereLiberty] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereLibertyJtaPlatform]
+05:59:34,457 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.engine.transaction.jta.platform.internal.WebSphereLibertyJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereLibertyJtaPlatform]
+05:59:34,458 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphere] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereJtaPlatform]
+05:59:34,459 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WebSphereJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereJtaPlatform]
+05:59:34,460 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphereExtended] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereExtendedJtaPlatform]
+05:59:34,460 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WebSphereExtendedJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereExtendedJtaPlatform]
+05:59:34,466 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+05:59:34,467 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+05:59:34,468 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+05:59:34,468 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+05:59:34,469 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+05:59:34,471 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [persistent] -> [org.hibernate.hql.spi.id.persistent.PersistentTableBulkIdStrategy]
+05:59:34,472 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [global_temporary] -> [org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy]
+05:59:34,472 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [local_temporary] -> [org.hibernate.hql.spi.id.local.LocalTemporaryTableBulkIdStrategy]
+05:59:34,474 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+05:59:34,474 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+05:59:34,475 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+05:59:34,475 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+05:59:34,476 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+05:59:34,477 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [default] -> [org.hibernate.cache.internal.DefaultCacheKeysFactory]
+05:59:34,478 TRACE StrategySelectorImpl:70 - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [simple] -> [org.hibernate.cache.internal.SimpleCacheKeysFactory]
+05:59:34,508  INFO Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+05:59:34,509 DEBUG Environment:199 - HHH000206: hibernate.properties not found
+05:59:34,645 TRACE ClassLoaderServiceImpl:182 - trying via [new URL("hibernate.cfg.xml")]
+05:59:34,645 TRACE ClassLoaderServiceImpl:193 - trying via [ClassLoader.getResourceAsStream("hibernate.cfg.xml")]
+05:59:34,663 TRACE LocalXmlResourceResolver:35 - In resolveEntity(-//Hibernate/Hibernate Configuration DTD 3.0//EN, http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd, null, null)
+05:59:34,663 DEBUG LocalXmlResourceResolver:57 - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+05:59:34,663 DEBUG LocalXmlResourceResolver:85 - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+05:59:34,667 DEBUG JaxbCfgProcessor:116 - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+05:59:34,921 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+05:59:34,928 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.engine.config.spi.ConfigurationService]
+05:59:34,931 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.cache.spi.RegionFactory]
+05:59:34,933 DEBUG RegionFactoryInitiator:118 - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+05:59:34,934 DEBUG RegionFactoryInitiator:49 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+05:59:34,957  INFO Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+05:59:35,118 DEBUG BasicTypeRegistry:156 - Adding type registration boolean -> org.hibernate.type.BooleanType@366647c2
+05:59:35,118 DEBUG BasicTypeRegistry:156 - Adding type registration boolean -> org.hibernate.type.BooleanType@366647c2
+05:59:35,118 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@366647c2
+05:59:35,119 DEBUG BasicTypeRegistry:156 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@865dd6
+05:59:35,119 DEBUG BasicTypeRegistry:156 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@62e7f11d
+05:59:35,120 DEBUG BasicTypeRegistry:156 - Adding type registration yes_no -> org.hibernate.type.YesNoType@2abf4075
+05:59:35,121 DEBUG BasicTypeRegistry:156 - Adding type registration byte -> org.hibernate.type.ByteType@1f97cf0d
+05:59:35,121 DEBUG BasicTypeRegistry:156 - Adding type registration byte -> org.hibernate.type.ByteType@1f97cf0d
+05:59:35,122 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@1f97cf0d
+05:59:35,123 DEBUG BasicTypeRegistry:156 - Adding type registration character -> org.hibernate.type.CharacterType@77eca502
+05:59:35,123 DEBUG BasicTypeRegistry:156 - Adding type registration char -> org.hibernate.type.CharacterType@77eca502
+05:59:35,123 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@77eca502
+05:59:35,125 DEBUG BasicTypeRegistry:156 - Adding type registration short -> org.hibernate.type.ShortType@7671cb68
+05:59:35,125 DEBUG BasicTypeRegistry:156 - Adding type registration short -> org.hibernate.type.ShortType@7671cb68
+05:59:35,125 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@7671cb68
+05:59:35,127 DEBUG BasicTypeRegistry:156 - Adding type registration integer -> org.hibernate.type.IntegerType@3a6bb9bf
+05:59:35,127 DEBUG BasicTypeRegistry:156 - Adding type registration int -> org.hibernate.type.IntegerType@3a6bb9bf
+05:59:35,128 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@3a6bb9bf
+05:59:35,129 DEBUG BasicTypeRegistry:156 - Adding type registration long -> org.hibernate.type.LongType@346d61be
+05:59:35,130 DEBUG BasicTypeRegistry:156 - Adding type registration long -> org.hibernate.type.LongType@346d61be
+05:59:35,130 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@346d61be
+05:59:35,131 DEBUG BasicTypeRegistry:156 - Adding type registration float -> org.hibernate.type.FloatType@2cd2a21f
+05:59:35,131 DEBUG BasicTypeRegistry:156 - Adding type registration float -> org.hibernate.type.FloatType@2cd2a21f
+05:59:35,132 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@2cd2a21f
+05:59:35,133 DEBUG BasicTypeRegistry:156 - Adding type registration double -> org.hibernate.type.DoubleType@3738449f
+05:59:35,133 DEBUG BasicTypeRegistry:156 - Adding type registration double -> org.hibernate.type.DoubleType@3738449f
+05:59:35,135 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@3738449f
+05:59:35,136 DEBUG BasicTypeRegistry:156 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@1eb5174b
+05:59:35,137 DEBUG BasicTypeRegistry:156 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@1eb5174b
+05:59:35,138 DEBUG BasicTypeRegistry:156 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@4e7912d8
+05:59:35,138 DEBUG BasicTypeRegistry:156 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@4e7912d8
+05:59:35,139 DEBUG BasicTypeRegistry:156 - Adding type registration string -> org.hibernate.type.StringType@41e1e210
+05:59:35,139 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.String -> org.hibernate.type.StringType@41e1e210
+05:59:35,140 DEBUG BasicTypeRegistry:156 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@44821a96
+05:59:35,141 DEBUG BasicTypeRegistry:156 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@732c2a62
+05:59:35,143 DEBUG BasicTypeRegistry:156 - Adding type registration url -> org.hibernate.type.UrlType@51dcb805
+05:59:35,144 DEBUG BasicTypeRegistry:156 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@51dcb805
+05:59:35,145 DEBUG BasicTypeRegistry:156 - Adding type registration Duration -> org.hibernate.type.DurationType@b62d79
+05:59:35,145 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@b62d79
+05:59:35,160 DEBUG BasicTypeRegistry:156 - Adding type registration Instant -> org.hibernate.type.InstantType@6d3a388c
+05:59:35,160 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@6d3a388c
+05:59:35,162 DEBUG BasicTypeRegistry:156 - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@932bc4a
+05:59:35,162 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@932bc4a
+05:59:35,164 DEBUG BasicTypeRegistry:156 - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@212b5695
+05:59:35,164 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@212b5695
+05:59:35,165 DEBUG BasicTypeRegistry:156 - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@37654521
+05:59:35,165 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@37654521
+05:59:35,167 DEBUG BasicTypeRegistry:156 - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@101952da
+05:59:35,167 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@101952da
+05:59:35,169 DEBUG BasicTypeRegistry:156 - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@10feca44
+05:59:35,169 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@10feca44
+05:59:35,173 DEBUG BasicTypeRegistry:156 - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@3e84448c
+05:59:35,174 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@3e84448c
+05:59:35,176 DEBUG BasicTypeRegistry:156 - Adding type registration date -> org.hibernate.type.DateType@28f3b248
+05:59:35,176 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@28f3b248
+05:59:35,178 DEBUG BasicTypeRegistry:156 - Adding type registration time -> org.hibernate.type.TimeType@57d7f8ca
+05:59:35,178 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@57d7f8ca
+05:59:35,180 DEBUG BasicTypeRegistry:156 - Adding type registration timestamp -> org.hibernate.type.TimestampType@662b4c69
+05:59:35,180 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@662b4c69
+05:59:35,180 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@662b4c69
+05:59:35,182 DEBUG BasicTypeRegistry:156 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@2a54a73f
+05:59:35,183 DEBUG BasicTypeRegistry:156 - Adding type registration calendar -> org.hibernate.type.CalendarType@4efc180e
+05:59:35,184 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@4efc180e
+05:59:35,184 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@4efc180e
+05:59:35,185 DEBUG BasicTypeRegistry:156 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@156b88f5
+05:59:35,187 DEBUG BasicTypeRegistry:156 - Adding type registration locale -> org.hibernate.type.LocaleType@4d465b11
+05:59:35,187 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@4d465b11
+05:59:35,188 DEBUG BasicTypeRegistry:156 - Adding type registration currency -> org.hibernate.type.CurrencyType@7133da86
+05:59:35,189 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@7133da86
+05:59:35,190 DEBUG BasicTypeRegistry:156 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@f736069
+05:59:35,190 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@f736069
+05:59:35,191 DEBUG BasicTypeRegistry:156 - Adding type registration class -> org.hibernate.type.ClassType@2b91004a
+05:59:35,191 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@2b91004a
+05:59:35,192 DEBUG BasicTypeRegistry:156 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@7205765b
+05:59:35,193 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@7205765b
+05:59:35,194 DEBUG BasicTypeRegistry:156 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@6283d8b8
+05:59:35,195 DEBUG BasicTypeRegistry:156 - Adding type registration binary -> org.hibernate.type.BinaryType@48f278eb
+05:59:35,195 DEBUG BasicTypeRegistry:156 - Adding type registration byte[] -> org.hibernate.type.BinaryType@48f278eb
+05:59:35,196 DEBUG BasicTypeRegistry:156 - Adding type registration [B -> org.hibernate.type.BinaryType@48f278eb
+05:59:35,197 DEBUG BasicTypeRegistry:156 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@7e7be63f
+05:59:35,197 DEBUG BasicTypeRegistry:156 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@7e7be63f
+05:59:35,197 DEBUG BasicTypeRegistry:156 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@7e7be63f
+05:59:35,199 DEBUG BasicTypeRegistry:156 - Adding type registration row_version -> org.hibernate.type.RowVersionType@1e04fa0a
+05:59:35,199 DEBUG BasicTypeRegistry:156 - Adding type registration image -> org.hibernate.type.ImageType@618425b5
+05:59:35,201 DEBUG BasicTypeRegistry:156 - Adding type registration characters -> org.hibernate.type.CharArrayType@5d7148e2
+05:59:35,201 DEBUG BasicTypeRegistry:156 - Adding type registration char[] -> org.hibernate.type.CharArrayType@5d7148e2
+05:59:35,201 DEBUG BasicTypeRegistry:156 - Adding type registration [C -> org.hibernate.type.CharArrayType@5d7148e2
+05:59:35,203 DEBUG BasicTypeRegistry:156 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@21e360a
+05:59:35,203 DEBUG BasicTypeRegistry:156 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@21e360a
+05:59:35,204 DEBUG BasicTypeRegistry:156 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@21e360a
+05:59:35,204 DEBUG BasicTypeRegistry:156 - Adding type registration text -> org.hibernate.type.TextType@74751b3
+05:59:35,205 DEBUG BasicTypeRegistry:156 - Adding type registration ntext -> org.hibernate.type.NTextType@52af26ee
+05:59:35,207 DEBUG BasicTypeRegistry:156 - Adding type registration blob -> org.hibernate.type.BlobType@6392827e
+05:59:35,208 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@6392827e
+05:59:35,209 DEBUG BasicTypeRegistry:156 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@43dac38f
+05:59:35,212 DEBUG BasicTypeRegistry:156 - Adding type registration clob -> org.hibernate.type.ClobType@593aaf41
+05:59:35,212 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@593aaf41
+05:59:35,214 DEBUG BasicTypeRegistry:156 - Adding type registration nclob -> org.hibernate.type.NClobType@6e0f5f7f
+05:59:35,215 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@6e0f5f7f
+05:59:35,215 DEBUG BasicTypeRegistry:156 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@2ea41516
+05:59:35,216 DEBUG BasicTypeRegistry:156 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@194bcebf
+05:59:35,219 DEBUG BasicTypeRegistry:156 - Adding type registration serializable -> org.hibernate.type.SerializableType@6404f418
+05:59:35,224 DEBUG BasicTypeRegistry:156 - Adding type registration object -> org.hibernate.type.ObjectType@23c30a20
+05:59:35,225 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@23c30a20
+05:59:35,225 DEBUG BasicTypeRegistry:156 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@12aba8be
+05:59:35,226 DEBUG BasicTypeRegistry:156 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@290222c1
+05:59:35,226 DEBUG BasicTypeRegistry:156 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@67f639d3
+05:59:35,226 DEBUG BasicTypeRegistry:156 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@6253c26
+05:59:35,226 DEBUG BasicTypeRegistry:156 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@49049a04
+05:59:35,226 DEBUG BasicTypeRegistry:156 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@71a8adcf
+05:59:35,227 DEBUG BasicTypeRegistry:156 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@27462a88
+05:59:35,227 DEBUG BasicTypeRegistry:156 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@82de64a
+05:59:35,237 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.boot.cfgxml.spi.CfgXmlAccessService]
+05:59:35,255 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.id.factory.spi.MutableIdentifierGeneratorFactory]
+05:59:35,257 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+05:59:35,257 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+05:59:35,258 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+05:59:35,258 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+05:59:35,259 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+05:59:35,259 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+05:59:35,260 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+05:59:35,260 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+05:59:35,261 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+05:59:35,262 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+05:59:35,262 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+05:59:35,262 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+05:59:35,263 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+05:59:35,263 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+05:59:35,264 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+05:59:35,264 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectFactory]
+05:59:35,265 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectResolver]
+05:59:35,266 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+05:59:35,269  WARN pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+05:59:35,280  INFO pooling:115 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:5555/hello-world]
+05:59:35,281  INFO pooling:121 - HHH10001001: Connection properties: {user=root, password=DrumsAreFun211}
+05:59:35,281  INFO pooling:129 - HHH10001003: Autocommit mode: false
+05:59:35,283 DEBUG DriverManagerConnectionProviderImpl:384 - Initializing Connection pool with 1 Connections
+05:59:35,284  INFO DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 20 (min=1)
+05:59:36,005 DEBUG JdbcEnvironmentInitiator:72 - Database ->
+       name : MySQL
+    version : 8.0.18
+      major : 8
+      minor : 0
+05:59:36,005 DEBUG JdbcEnvironmentInitiator:83 - Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.45 ( Revision: 9131eefa398531c7dc98776e8a3fe839e544c5b2 )
+      major : 5
+      minor : 1
+05:59:36,005 DEBUG JdbcEnvironmentInitiator:389 - JDBC version : 4.0
+05:59:36,015  INFO Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+05:59:36,031 DEBUG IdentifierHelperBuilder:113 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+05:59:36,046 DEBUG IdentifierHelperBuilder:187 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+05:59:36,068 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [hello-world]
+05:59:36,069 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [null]
+05:59:36,080 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.engine.jdbc.spi.JdbcServices]
+05:59:36,083 DEBUG Namespace:51 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+05:59:36,087 DEBUG TypeConfiguration$Scope:152 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@6436a7db] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@460ebd80]
+05:59:36,164 DEBUG AnnotationBinder:557 - Binding entity from annotated class: entity.Message
+05:59:36,193 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [DTYPE]
+05:59:36,193 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+05:59:36,201 DEBUG EntityBinder:430 - Import with entity name Message
+05:59:36,202 TRACE InFlightMetadataCollectorImpl:716 - Import: Message -> entity.Message
+05:59:36,202 TRACE InFlightMetadataCollectorImpl:716 - Import: entity.Message -> entity.Message
+05:59:36,204 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [message]
+05:59:36,204 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [message]
+05:59:36,207 DEBUG EntityBinder:873 - Bind entity entity.Message on table message
+05:59:36,238 TRACE AnnotationBinder:1644 - Processing annotations of entity.Message.id
+05:59:36,242 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [ID]
+05:59:36,244 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [ID]
+05:59:36,244 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(message), mappingColumn=ID, insertable=true, updatable=true, unique=false}
+05:59:36,249 DEBUG PropertyBinder:175 - MetadataSourceProcessor property id with lazy=false
+05:59:36,252 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [entity.Message:id]
+05:59:36,256 DEBUG SimpleValueBinder:411 - building SimpleValue for id
+05:59:36,257 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [ID]
+05:59:36,258 DEBUG PropertyBinder:266 - Building property id
+05:59:36,263 TRACE PropertyBinder:329 - Cascading id with null
+05:59:36,265 DEBUG BinderHelper:644 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(ID)]), id, identity, , ...)
+05:59:36,266 TRACE AnnotationBinder:2457 - Bind @Id on id
+05:59:36,266 TRACE AnnotationBinder:1644 - Processing annotations of entity.Message.text
+05:59:36,266 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [TEXT]
+05:59:36,266 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [TEXT]
+05:59:36,267 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(message), mappingColumn=TEXT, insertable=true, updatable=true, unique=false}
+05:59:36,267 DEBUG PropertyBinder:175 - MetadataSourceProcessor property text with lazy=false
+05:59:36,267 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [entity.Message:text]
+05:59:36,267 DEBUG SimpleValueBinder:411 - building SimpleValue for text
+05:59:36,267 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [TEXT]
+05:59:36,267 DEBUG PropertyBinder:266 - Building property text
+05:59:36,267 TRACE PropertyBinder:329 - Cascading text with null
+05:59:36,273 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for id
+05:59:36,273 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for text
+05:59:36,274 DEBUG PrimaryKey:35 - Forcing column [id] to be non-null as it is part of the primary key for table [message]
+05:59:36,295 TRACE BatchFetchStyle:51 - Interpreting BatchFetchStyle from setting : null
+05:59:36,299 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder]
+05:59:36,330 DEBUG SessionFactoryImpl:207 - Building session factory
+05:59:36,332 DEBUG Settings:68 - SessionFactory name : null
+05:59:36,333 DEBUG Settings:69 - Automatic flush during beforeCompletion(): enabled
+05:59:36,333 DEBUG Settings:70 - Automatic session close at end of transaction: disabled
+05:59:36,334 DEBUG Settings:72 - Statistics: disabled
+05:59:36,334 DEBUG Settings:74 - Deleted entity synthetic identifier rollback: disabled
+05:59:36,335 DEBUG Settings:75 - Default entity-mode: pojo
+05:59:36,336 DEBUG Settings:76 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+05:59:36,336 DEBUG Settings:77 - Allow initialization of lazy state outside session : disabled
+05:59:36,336 DEBUG Settings:79 - Using BatchFetchStyle : LEGACY
+05:59:36,337 DEBUG Settings:80 - Default batch fetch size: -1
+05:59:36,337 DEBUG Settings:81 - Maximum outer join fetch depth: 2
+05:59:36,337 DEBUG Settings:82 - Default null ordering: NONE
+05:59:36,337 DEBUG Settings:83 - Order SQL updates by primary key: disabled
+05:59:36,337 DEBUG Settings:84 - Order SQL inserts for batching: disabled
+05:59:36,338 DEBUG Settings:86 - multi-tenancy strategy : NONE
+05:59:36,338 DEBUG Settings:88 - JTA Track by Thread: enabled
+05:59:36,338 DEBUG Settings:90 - Query language substitutions: {}
+05:59:36,338 DEBUG Settings:91 - Named query checking : enabled
+05:59:36,338 DEBUG Settings:93 - Second-level cache: disabled
+05:59:36,338 DEBUG Settings:94 - Second-level query cache: disabled
+05:59:36,338 DEBUG Settings:95 - Second-level query cache factory: null
+05:59:36,339 DEBUG Settings:96 - Second-level cache region prefix: null
+05:59:36,339 DEBUG Settings:97 - Optimize second-level cache for minimal puts: disabled
+05:59:36,339 DEBUG Settings:98 - Structured second-level cache entries: disabled
+05:59:36,339 DEBUG Settings:99 - Second-level cache direct-reference entries: disabled
+05:59:36,340 DEBUG Settings:100 - Automatic eviction of collection cache: disabled
+05:59:36,340 DEBUG Settings:102 - JDBC batch size: 15
+05:59:36,341 DEBUG Settings:103 - JDBC batch updates for versioned data: enabled
+05:59:36,341 DEBUG Settings:104 - Scrollable result sets: enabled
+05:59:36,341 DEBUG Settings:105 - Wrap result sets: disabled
+05:59:36,341 DEBUG Settings:106 - JDBC3 getGeneratedKeys(): enabled
+05:59:36,341 DEBUG Settings:107 - JDBC result set fetch size: null
+05:59:36,342 DEBUG Settings:108 - Connection release mode: AFTER_TRANSACTION
+05:59:36,342 DEBUG Settings:109 - Generate SQL with comments: disabled
+05:59:36,343 DEBUG Settings:111 - JPA compliance - query : disabled
+05:59:36,343 DEBUG Settings:112 - JPA compliance - closed-handling : disabled
+05:59:36,343 DEBUG Settings:113 - JPA compliance - lists : disabled
+05:59:36,343 DEBUG Settings:114 - JPA compliance - transactions : disabled
+05:59:36,343 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.service.spi.SessionFactoryServiceRegistryFactory]
+05:59:36,353 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.event.service.spi.EventListenerRegistry]
+05:59:36,388 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.resource.beans.spi.ManagedBeanRegistry]
+05:59:36,395 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.cache.spi.CacheImplementor]
+05:59:36,406 DEBUG SessionFactoryImpl:262 - Session factory constructed with filter configurations : {}
+05:59:36,407 DEBUG SessionFactoryImpl:263 - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, dialect=org.hibernate.dialect.MySQLDialect, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.class.path=C:\bench\hello-world\target\classes;C:\Users\Willy Maly\.m2\repository\mysql\mysql-connector-java\5.1.45\mysql-connector-java-5.1.45.jar;C:\Users\Willy Maly\.m2\repository\org\hibernate\hibernate-core\5.4.10.Final\hibernate-core-5.4.10.Final.jar;C:\Users\Willy Maly\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\Willy Maly\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\Willy Maly\.m2\repository\org\javassist\javassist\3.24.0-GA\javassist-3.24.0-GA.jar;C:\Users\Willy Maly\.m2\repository\net\bytebuddy\byte-buddy\1.10.2\byte-buddy-1.10.2.jar;C:\Users\Willy Maly\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Willy Maly\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\Willy Maly\.m2\repository\org\jboss\jandex\2.1.1.Final\jandex-2.1.1.Final.jar;C:\Users\Willy Maly\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Willy Maly\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Willy Maly\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\Willy Maly\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.0.Final\hibernate-commons-annotations-5.1.0.Final.jar;C:\Users\Willy Maly\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Willy Maly\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\Willy Maly\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\Willy Maly\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\Willy Maly\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\Willy Maly\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\Willy Maly\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=http://java.oracle.com/, user.timezone=America/Chicago, os.name=Windows 10, java.vm.specification.version=1.8, user.country=US, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=C:\Program Files\Java\jre1.8.0_211\bin, sun.java.command=client.HelloWorldClient, sun.cpu.endian=little, user.home=C:\Users\Willy Maly, user.language=en, java.specification.vendor=Oracle Corporation, java.home=C:\Program Files\Java\jre1.8.0_211, file.separator=\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, sun.boot.class.path=C:\Program Files\Java\jre1.8.0_211\lib\resources.jar;C:\Program Files\Java\jre1.8.0_211\lib\rt.jar;C:\Program Files\Java\jre1.8.0_211\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_211\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_211\lib\jce.jar;C:\Program Files\Java\jre1.8.0_211\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_211\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_211\classes, user.script=, connection.password=DrumsAreFun211, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_211-b12, user.name=Willy Maly, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_211\lib\endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:5555/hello-world, file.encoding=Cp1252, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.connection.driver_class=com.mysql.jdbc.Driver, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=C:\Users\WILLYM~1\AppData\Local\Temp\, java.version=1.8.0_211, user.dir=C:\bench\hello-world, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, connection.driver_class=com.mysql.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@44c79f32, java.library.path=C:\Program Files\Java\jre1.8.0_211\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_211/bin/server;C:/Program Files/Java/jre1.8.0_211/bin;C:/Program Files/Java/jre1.8.0_211/lib/amd64;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\ProgramData\nvm;C:\Program Files\nodejs;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Users\Willy Maly\AppData\Local\Microsoft\WindowsApps;C:\Program Files\heroku\bin;C:\Program Files\apache-maven-3.6.2\bin;;C:\WINDOWS\system32;;., java.vm.info=mixed mode, java.vendor=Oracle Corporation, java.vm.version=25.211-b12, hibernate.bytecode.use_reflection_optimizer=false, java.ext.dirs=C:\Program Files\Java\jre1.8.0_211\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:mysql://localhost:5555/hello-world, java.class.version=52.0}
+05:59:36,412 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.engine.query.spi.NativeQueryInterpreter]
+05:59:36,417 DEBUG JaccIntegrator:80 - Skipping JACC integration as it was not enabled
+05:59:36,418 DEBUG SessionFactoryImpl:302 - Instantiated session factory
+05:59:36,419 DEBUG TypeConfiguration$Scope:157 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@6436a7db] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@4215838f]
+05:59:36,435 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.persister.spi.PersisterFactory]
+05:59:36,437 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.persister.spi.PersisterClassResolver]
+05:59:36,460 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.property.access.spi.PropertyAccessStrategyResolver]
+05:59:36,462 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [entity.Message] is safe
+05:59:36,463 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.Message
+05:59:36,476 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [entity.Message] is safe
+05:59:36,476 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.Message
+05:59:36,696 TRACE AbstractPropertyMapping:125 - Skipping duplicate registration of path [text], existing type = [org.hibernate.type.StringType@41e1e210], incoming type = [org.hibernate.type.StringType@41e1e210]
+05:59:36,696 TRACE AbstractPropertyMapping:125 - Skipping duplicate registration of path [id], existing type = [org.hibernate.type.LongType@346d61be], incoming type = [org.hibernate.type.LongType@346d61be]
+05:59:36,703 DEBUG AbstractEntityPersister:3847 - Static SQL for entity: entity.Message
+05:59:36,703 DEBUG AbstractEntityPersister:3852 -  Version select: select ID from message where ID =?
+05:59:36,703 DEBUG AbstractEntityPersister:3855 -  Snapshot select: select message_.ID, message_.TEXT as TEXT2_0_ from message message_ where message_.ID=?
+05:59:36,703 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into message (TEXT, ID) values (?, ?)
+05:59:36,703 DEBUG AbstractEntityPersister:394 -  Update 0: update message set TEXT=? where ID=?
+05:59:36,703 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from message where ID=?
+05:59:36,703 DEBUG AbstractEntityPersister:3863 -  Identity insert: insert into message (TEXT) values (?)
+05:59:36,718 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:172 -  Starting root entity : entity.Message
+05:59:36,722 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1358b28e]
+05:59:36,722 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:113 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@7de4a01f
+05:59:36,723 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:648 - .. Registering AssociationKey : AssociationKey(table=message, columns={ID}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@7de4a01f
+05:59:36,723 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:239 - >> Starting entity identifier : entity.Message
+05:59:36,724 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : text
+05:59:36,724 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=text, type=string [non-identifier])
+05:59:36,724 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=text, type=string [non-identifier])
+05:59:36,724 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:120 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@7de4a01f
+05:59:36,724 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:208 -  Finished root entity : entity.Message
+05:59:36,724 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+05:59:36,734 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+05:59:36,738 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=entity.Message)
+    - Returns
+       - EntityReturnImpl(entity=entity.Message, querySpaceUid=<gen:0>, path=entity.Message)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=entity.Message)
+          - SQL table alias mapping - message0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_0_0_}
+
+05:59:36,740 DEBUG EntityLoader:137 - Static select for entity entity.Message [NONE]: select message0_.ID as ID1_0_0_, message0_.TEXT as TEXT2_0_0_ from message message0_ where message0_.ID=?
+05:59:36,740 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:172 -  Starting root entity : entity.Message
+05:59:36,740 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4fcc529]
+05:59:36,740 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:113 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@25cc7470
+05:59:36,740 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:648 - .. Registering AssociationKey : AssociationKey(table=message, columns={ID}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@25cc7470
+05:59:36,740 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:239 - >> Starting entity identifier : entity.Message
+05:59:36,741 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : text
+05:59:36,741 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=text, type=string [non-identifier])
+05:59:36,741 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=text, type=string [non-identifier])
+05:59:36,741 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:120 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@25cc7470
+05:59:36,741 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:208 -  Finished root entity : entity.Message
+05:59:36,741 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+05:59:36,741 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+05:59:36,742 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=entity.Message)
+    - Returns
+       - EntityReturnImpl(entity=entity.Message, querySpaceUid=<gen:0>, path=entity.Message)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=entity.Message)
+          - SQL table alias mapping - message0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_0_0_}
+
+05:59:36,742 DEBUG EntityLoader:137 - Static select for entity entity.Message [READ]: select message0_.ID as ID1_0_0_, message0_.TEXT as TEXT2_0_0_ from message message0_ where message0_.ID=?
+05:59:36,753 DEBUG Loader:38 - Static select for action ACTION_MERGE on entity entity.Message: select message0_.ID as ID1_0_0_, message0_.TEXT as TEXT2_0_0_ from message message0_ where message0_.ID=?
+05:59:36,753 DEBUG Loader:38 - Static select for action ACTION_REFRESH on entity entity.Message: select message0_.ID as ID1_0_0_, message0_.TEXT as TEXT2_0_0_ from message message0_ where message0_.ID=?
+05:59:36,765 TRACE MetadataContext:204 - Wrapping up metadata context...
+05:59:36,765 TRACE MetadataContext:216 - Starting entity [entity.Message]
+05:59:36,765 TRACE AttributeFactory:137 - Building identifier attribute [Message.id]
+05:59:36,766 TRACE AttributeFactory:446 - Starting attribute metadata determination [id]
+05:59:36,767 TRACE AttributeFactory:451 -     Determined member [private java.lang.Long entity.Message.id]
+05:59:36,767 TRACE AttributeFactory:455 -     Determined type [name=long, class=org.hibernate.type.LongType]
+05:59:36,770 TRACE AttributeFactory:88 - Building attribute [Message.text]
+05:59:36,771 TRACE AttributeFactory:446 - Starting attribute metadata determination [text]
+05:59:36,771 TRACE AttributeFactory:451 -     Determined member [private java.lang.String entity.Message.text]
+05:59:36,771 TRACE AttributeFactory:455 -     Determined type [name=string, class=org.hibernate.type.StringType]
+05:59:36,771 TRACE MetadataContext:251 - Completed entity [entity.Message]
+05:59:36,777 DEBUG SchemaManagementToolCoordinator:57 - No actions specified; doing nothing
+05:59:36,777 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform]
+05:59:36,777 DEBUG JtaPlatformInitiator:43 - No JtaPlatform was specified, checking resolver
+05:59:36,777 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.engine.transaction.jta.platform.spi.JtaPlatformResolver]
+05:59:36,777 DEBUG JtaPlatformResolverInitiator:33 - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+05:59:36,782 DEBUG StandardJtaPlatformResolver:137 - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+05:59:36,782  INFO JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+05:59:36,784 DEBUG NamedQueryRepository:151 - Checking 0 named HQL queries
+05:59:36,784 DEBUG NamedQueryRepository:167 - Checking 0 named SQL queries
+05:59:36,794 TRACE TypeConfiguration$Scope:205 - Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@4215838f] for TypeConfiguration
+05:59:36,798 DEBUG SessionFactoryRegistry:52 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@7ed9ae94
+05:59:36,799 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.engine.jndi.spi.JndiService]
+05:59:36,802 DEBUG SessionFactoryRegistry:74 - Registering SessionFactory: 47cb8406-25e8-4823-bb5b-d8859a76b970 (<unnamed>)
+05:59:36,803 DEBUG SessionFactoryRegistry:81 - Not binding SessionFactory to JNDI, no JNDI name configured
+05:59:36,803 TRACE SessionFactoryImpl$SessionBuilderImpl:1304 - Opening Hibernate Session.  tenant=null
+05:59:36,886 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.stat.spi.StatisticsImplementor]
+05:59:36,895 DEBUG StatisticsInitiator:101 - Statistics initialized [enabled=false]
+05:59:36,898 TRACE AbstractServiceRegistryImpl:233 - Initializing service [role=org.hibernate.jmx.spi.JmxService]
+05:59:36,901 TRACE SessionImpl:260 - Opened Session [c4dd3dc4-422b-4a5b-ae9c-2a0f74ce5f66] at timestamp: 1579607976849
+05:59:36,907 DEBUG TransactionImpl:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+05:59:36,908 DEBUG TransactionImpl:81 - begin
+05:59:36,910 TRACE AbstractLogicalConnectionImplementor:66 - Preparing to begin transaction via JDBC Connection.setAutoCommit(false)
+05:59:36,911 TRACE AbstractLogicalConnectionImplementor:68 - Transaction begun via JDBC Connection.setAutoCommit(false)
+05:59:36,913 TRACE JdbcResourceLocalTransactionCoordinatorImpl:177 - ResourceLocalTransactionCoordinatorImpl#afterBeginCallback
+05:59:36,916 TRACE DefaultSaveOrUpdateEventListener:164 - Saving transient instance
+05:59:36,920 TRACE AbstractSaveEventListener:172 - Saving [entity.Message#<null>]
+05:59:36,929 TRACE ActionQueue:316 - Adding an EntityIdentityInsertAction for [entity.Message] object
+05:59:36,929 TRACE ActionQueue:257 - Executing inserts before finding non-nullable transient entities for early insert: [EntityIdentityInsertAction[entity.Message#<null>]]
+05:59:36,931 TRACE ActionQueue:262 - Adding insert with no non-nullable, transient entities: [EntityIdentityInsertAction[entity.Message#<null>]]
+05:59:36,931 TRACE ActionQueue:279 - Executing insertions before resolved early-insert
+05:59:36,931 DEBUG ActionQueue:281 - Executing identity-insert immediately
+05:59:36,933 TRACE AbstractEntityPersister:3108 - Inserting entity: entity.Message (native id)
+05:59:36,939 DEBUG SQL:127 - insert into message (TEXT) values (?)
+05:59:36,956 TRACE ResourceRegistryStandardImpl:83 - Registering statement [com.mysql.jdbc.JDBC42PreparedStatement@6ff37443: insert into message (TEXT) values (** NOT SPECIFIED **)]
+05:59:36,957 TRACE AbstractEntityPersister:2914 - Dehydrating entity: [entity.Message#<null>]
+05:59:36,960 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Happy Logging!]
+05:59:36,967 DEBUG IdentifierGeneratorHelper:78 - Natively generated identity: 4
+05:59:36,968 TRACE ResourceRegistryStandardImpl:118 - Releasing result set [com.mysql.jdbc.JDBC42ResultSet@6b3871d6]
+05:59:36,968 TRACE ResourceRegistryStandardImpl:161 - Closing result set [com.mysql.jdbc.JDBC42ResultSet@6b3871d6]
+05:59:36,968 TRACE ResourceRegistryStandardImpl:97 - Releasing statement [com.mysql.jdbc.JDBC42PreparedStatement@6ff37443: insert into message (TEXT) values ('Happy Logging!')]
+05:59:36,968 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+05:59:36,968 TRACE ResourceRegistryStandardImpl:177 - Closing prepared statement [com.mysql.jdbc.JDBC42PreparedStatement@6ff37443: insert into message (TEXT) values ('Happy Logging!')]
+05:59:36,969 TRACE JdbcCoordinatorImpl:255 - Starting after statement execution processing [AFTER_TRANSACTION]
+05:59:36,972 DEBUG TransactionImpl:98 - committing
+05:59:36,972 TRACE JdbcResourceLocalTransactionCoordinatorImpl:181 - ResourceLocalTransactionCoordinatorImpl#beforeCompletionCallback
+05:59:36,972 TRACE SessionImpl:2388 - SessionImpl#beforeTransactionCompletion()
+05:59:36,972 TRACE SessionImpl:434 - Automatically flushing session
+05:59:36,973 TRACE AbstractFlushingEventListener:74 - Flushing session
+05:59:36,973 DEBUG AbstractFlushingEventListener:139 - Processing flush-time cascades
+05:59:36,974 DEBUG AbstractFlushingEventListener:192 - Dirty checking collections
+05:59:36,975 TRACE AbstractFlushingEventListener:205 - Flushing entities and processing referenced collections
+05:59:36,977 TRACE AbstractFlushingEventListener:248 - Processing unreferenced collections
+05:59:36,978 TRACE AbstractFlushingEventListener:261 - Scheduling collection removes/(re)creates/updates
+05:59:36,980 DEBUG AbstractFlushingEventListener:113 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+05:59:36,981 DEBUG AbstractFlushingEventListener:120 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+05:59:36,982 DEBUG EntityPrinter:110 - Listing entities:
+05:59:36,982 DEBUG EntityPrinter:117 - entity.Message{id=4, text=Happy Logging!}
+05:59:36,982 TRACE AbstractFlushingEventListener:333 - Executing flush
+05:59:36,983 TRACE JdbcCoordinatorImpl:255 - Starting after statement execution processing [AFTER_TRANSACTION]
+05:59:36,983 TRACE AbstractFlushingEventListener:368 - Post flush
+05:59:36,985 TRACE SynchronizationRegistryStandardImpl:55 - SynchronizationRegistryStandardImpl.notifySynchronizationsBeforeTransactionCompletion
+05:59:36,985 TRACE AbstractLogicalConnectionImplementor:80 - Preparing to commit transaction via JDBC Connection.commit()
+05:59:36,990 TRACE AbstractLogicalConnectionImplementor:83 - Transaction committed via JDBC Connection.commit()
+05:59:36,990 TRACE AbstractLogicalConnectionImplementor:53 - LogicalConnection#afterTransaction
+05:59:36,990 TRACE ResourceRegistryStandardImpl:317 - Releasing JDBC resources
+05:59:36,991 DEBUG LogicalConnectionManagedImpl:159 - Initiating JDBC connection release from afterTransaction
+05:59:36,992 TRACE ResourceRegistryStandardImpl:317 - Releasing JDBC resources
+05:59:36,992 TRACE JdbcResourceLocalTransactionCoordinatorImpl:199 - ResourceLocalTransactionCoordinatorImpl#afterCompletionCallback(true)
+05:59:36,992 TRACE SynchronizationRegistryStandardImpl:159 - SynchronizationRegistryStandardImpl.notifySynchronizationsAfterTransactionCompletion(3)
+05:59:36,992 TRACE AbstractLogicalConnectionImplementor:53 - LogicalConnection#afterTransaction
+05:59:36,992 TRACE ResourceRegistryStandardImpl:317 - Releasing JDBC resources
+05:59:36,993 DEBUG LogicalConnectionManagedImpl:159 - Initiating JDBC connection release from afterTransaction
+05:59:36,993 TRACE SessionImpl:2403 - SessionImpl#afterTransactionCompletion(successful=true, delayed=false)
+05:59:36,993 TRACE SessionImpl:348 - Closing session [c4dd3dc4-422b-4a5b-ae9c-2a0f74ce5f66]
+05:59:36,993 TRACE JdbcCoordinatorImpl:166 - Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@4cbd03e7]
+05:59:36,993 TRACE ResourceRegistryStandardImpl:317 - Releasing JDBC resources
+05:59:36,993 TRACE LogicalConnectionManagedImpl:233 - Closing logical connection
+05:59:36,993 TRACE LogicalConnectionManagedImpl:240 - Logical connection closed
