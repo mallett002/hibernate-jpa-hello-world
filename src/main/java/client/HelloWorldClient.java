@@ -10,7 +10,7 @@ public class HelloWorldClient {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
 
-		Message message = new Message("Hello world!");
+		Message message = new Message("Happy Logging!");
 
 		session.save(message);
 
