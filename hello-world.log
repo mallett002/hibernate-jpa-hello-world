@@ -507,3 +507,18 @@
 05:59:36,993 TRACE ResourceRegistryStandardImpl:317 - Releasing JDBC resources
 05:59:36,993 TRACE LogicalConnectionManagedImpl:233 - Closing logical connection
 05:59:36,993 TRACE LogicalConnectionManagedImpl:240 - Logical connection closed
+06:32:27,288 DEBUG SQL:127 - insert into message (TEXT) values (?)
+06:32:27,312 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Warren Peace is not a real book.]
+06:36:11,160 DEBUG SQL:127 - insert into message (TEXT) values (?)
+06:36:11,179 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [the_real_stew_pickels is a good username]
+06:39:02,325 DEBUG SQL:127 - select message0_.ID as ID1_0_0_, message0_.TEXT as TEXT2_0_0_ from message message0_ where message0_.ID=?
+06:39:02,342 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [2]
+06:41:00,342 DEBUG SQL:127 - select message0_.ID as ID1_0_0_, message0_.TEXT as TEXT2_0_0_ from message message0_ where message0_.ID=?
+06:41:00,367 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [2]
+06:41:00,409 DEBUG SQL:127 - update message set TEXT=? where ID=?
+06:41:00,410 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Hello automatic dirty checking]
+06:41:00,411 TRACE BasicBinder:64 - binding parameter [2] as [BIGINT] - [2]
+06:44:32,886 DEBUG SQL:127 - select message0_.ID as ID1_0_0_, message0_.TEXT as TEXT2_0_0_ from message message0_ where message0_.ID=?
+06:44:32,902 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [3]
+06:44:32,940 DEBUG SQL:127 - delete from message where ID=?
+06:44:32,940 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [3]
