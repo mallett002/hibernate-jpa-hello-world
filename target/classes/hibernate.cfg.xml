@@ -18,9 +18,12 @@
 
 		<!-- Use XML-based mapping metadata -->
 		<!-- <mapping resource="domain/Message.hbm.xml"/> -->
+		
+		<!-- Create / update DB tables automatically using mapping metadata -->
+		<property name="hbm2ddl.auto">update</property>
 
 		<!-- Use Annotation-based mapping metadata -->
-		<mapping class="entity.Message" />
+		<mapping class="entity.Person" />
 	</session-factory>
 
 </hibernate-configuration>

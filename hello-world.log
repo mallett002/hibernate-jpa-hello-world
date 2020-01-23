@@ -522,3 +522,37 @@
 06:44:32,902 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [3]
 06:44:32,940 DEBUG SQL:127 - delete from message where ID=?
 06:44:32,940 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [3]
+05:49:06,338 DEBUG SQL:127 - insert into Person (city, street, zipcode, name) values (?, ?, ?, ?)
+05:49:06,360 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Seattle]
+05:49:06,360 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [200 E Main St]
+05:49:06,360 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [85123]
+05:49:06,361 TRACE BasicBinder:64 - binding parameter [4] as [VARCHAR] - [Ruby]
+05:56:28,130 DEBUG SQL:127 - insert into Person (city, street, zipcode, name) values (?, ?, ?, ?)
+05:56:28,154 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Seattle]
+05:56:28,154 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [200 E Main St]
+05:56:28,155 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [85123]
+05:56:28,155 TRACE BasicBinder:64 - binding parameter [4] as [VARCHAR] - [Ruby]
+05:58:11,159 DEBUG SQL:127 - insert into Person (city, street, zipcode, name) values (?, ?, ?, ?)
+05:58:11,179 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Seattle]
+05:58:11,180 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [200 E Main St]
+05:58:11,180 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [85123]
+05:58:11,181 TRACE BasicBinder:64 - binding parameter [4] as [VARCHAR] - [Ruby]
+06:07:23,751 DEBUG SQL:127 - insert into Person (city, street, zipcode, name) values (?, ?, ?, ?)
+06:07:23,789 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Sioux City]
+06:07:23,790 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [299 E Main St]
+06:07:23,791 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [51104]
+06:07:23,793 TRACE BasicBinder:64 - binding parameter [4] as [VARCHAR] - [Will]
+06:19:19,311 DEBUG SQL:127 - alter table Person add column billing_city varchar(255)
+06:19:19,413 DEBUG SQL:127 - alter table Person add column billing_street varchar(255)
+06:19:19,468 DEBUG SQL:127 - alter table Person add column billing_zipcode varchar(255)
+06:19:19,513 DEBUG SQL:127 - alter table Person add column home_city varchar(255)
+06:19:19,545 DEBUG SQL:127 - alter table Person add column home_street varchar(255)
+06:19:19,589 DEBUG SQL:127 - alter table Person add column home_zipcode varchar(255)
+06:19:19,915 DEBUG SQL:127 - insert into Person (billing_city, billing_street, billing_zipcode, home_city, home_street, home_zipcode, name) values (?, ?, ?, ?, ?, ?, ?)
+06:19:19,937 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Sioux City]
+06:19:19,938 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [301 21st St]
+06:19:19,939 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [51104]
+06:19:19,939 TRACE BasicBinder:64 - binding parameter [4] as [VARCHAR] - [Sioux City]
+06:19:19,940 TRACE BasicBinder:64 - binding parameter [5] as [VARCHAR] - [299 E Main St]
+06:19:19,941 TRACE BasicBinder:64 - binding parameter [6] as [VARCHAR] - [51104]
+06:19:19,941 TRACE BasicBinder:64 - binding parameter [7] as [VARCHAR] - [Will]
