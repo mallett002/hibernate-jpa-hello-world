@@ -4,7 +4,7 @@ package entity;
 import javax.persistence.*;
 
 @Entity // Entity: has primary key in DB
-@Table(name="Person")
+@Table(name="person")
 public class Person {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)

@@ -556,3 +556,11 @@
 06:19:19,940 TRACE BasicBinder:64 - binding parameter [5] as [VARCHAR] - [299 E Main St]
 06:19:19,941 TRACE BasicBinder:64 - binding parameter [6] as [VARCHAR] - [51104]
 06:19:19,941 TRACE BasicBinder:64 - binding parameter [7] as [VARCHAR] - [Will]
+05:09:16,104 DEBUG SQL:127 - insert into person (billing_city, billing_street, billing_zipcode, home_city, home_street, home_zipcode, name) values (?, ?, ?, ?, ?, ?, ?)
+05:09:16,161 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Sioux City]
+05:09:16,163 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [301 21st St]
+05:09:16,164 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [51104]
+05:09:16,165 TRACE BasicBinder:64 - binding parameter [4] as [VARCHAR] - [Sioux City]
+05:09:16,166 TRACE BasicBinder:64 - binding parameter [5] as [VARCHAR] - [299 E Main St]
+05:09:16,166 TRACE BasicBinder:64 - binding parameter [6] as [VARCHAR] - [51104]
+05:09:16,167 TRACE BasicBinder:64 - binding parameter [7] as [VARCHAR] - [Will]
