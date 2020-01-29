@@ -4,8 +4,10 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import entity.Address;
+import entity.Guide;
 import entity.Message;
 import entity.Person;
+import entity.Student;
 import util.HibernateUtil;
 
 public class HelloWorldClient {
@@ -36,10 +38,17 @@ public class HelloWorldClient {
 			// session.delete(message);
 			
 			/* MAPPING OPERATIONS */
-			Address homeAddress = new Address("299 E Main St", "Sioux City", "51104");
-			Address billingAddress = new Address("301 21st St", "Sioux City", "51104");
-			Person person = new Person("Will", homeAddress, billingAddress);
-			session.save(person);
+//			Address homeAddress = new Address("299 E Main St", "Sioux City", "51104");
+//			Address billingAddress = new Address("301 21st St", "Sioux City", "51104");
+//			Person person = new Person("Will", homeAddress, billingAddress);
+//			session.save(person);
+			
+			/* Many Students to one Guide */
+			Guide guide = new Guide("2000MO10789", "Mike Lawson", 1000);
+			Student student = new Student("2014JT50123", "John Smith", guide);
+			
+			session.save(guide);
+			session.save(student);
 
 			// Commit Transaction
 			txn.commit();

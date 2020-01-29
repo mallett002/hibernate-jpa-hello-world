@@ -24,6 +24,8 @@
 
 		<!-- Use Annotation-based mapping metadata -->
 		<mapping class="entity.Person" />
+		<mapping class="entity.Guide" />
+		<mapping class="entity.Student" />
 	</session-factory>
 
 </hibernate-configuration>

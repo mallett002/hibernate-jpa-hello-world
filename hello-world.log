@@ -564,3 +564,26 @@
 05:09:16,166 TRACE BasicBinder:64 - binding parameter [5] as [VARCHAR] - [299 E Main St]
 05:09:16,166 TRACE BasicBinder:64 - binding parameter [6] as [VARCHAR] - [51104]
 05:09:16,167 TRACE BasicBinder:64 - binding parameter [7] as [VARCHAR] - [Will]
+05:55:10,960 DEBUG SQL:127 - create table Guide (id bigint not null auto_increment, name varchar(255), salary integer, staff_id varchar(255) not null, primary key (id)) type=MyISAM
+05:55:10,968 DEBUG SQL:127 - create table Student (id bigint not null auto_increment, enrollment_id varchar(255) not null, name varchar(255), guide_id bigint, primary key (id)) type=MyISAM
+05:55:10,972 DEBUG SQL:127 - alter table Student add constraint FKb4ny3l3cnsxbbn601ev8mhlj5 foreign key (guide_id) references Guide (id)
+05:55:11,127 DEBUG SQL:127 - insert into Guide (name, salary, staff_id) values (?, ?, ?)
+05:55:11,143 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Mike Lawson]
+05:55:11,144 TRACE BasicBinder:64 - binding parameter [2] as [INTEGER] - [1000]
+05:55:11,145 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [2000MO10789]
+05:56:55,706 DEBUG SQL:127 - create table guide (id bigint not null auto_increment, name varchar(255), salary integer, staff_id varchar(255) not null, primary key (id)) type=MyISAM
+05:56:55,715 DEBUG SQL:127 - create table student (id bigint not null auto_increment, enrollment_id varchar(255) not null, name varchar(255), guide_id bigint, primary key (id)) type=MyISAM
+05:56:55,719 DEBUG SQL:127 - alter table student add constraint FKfwnod6lgow0caf1eu0n5sv9qo foreign key (guide_id) references guide (id)
+05:56:55,863 DEBUG SQL:127 - insert into guide (name, salary, staff_id) values (?, ?, ?)
+05:56:55,876 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Mike Lawson]
+05:56:55,877 TRACE BasicBinder:64 - binding parameter [2] as [INTEGER] - [1000]
+05:56:55,877 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [2000MO10789]
+06:04:08,364 DEBUG SQL:127 - alter table student add constraint FKfwnod6lgow0caf1eu0n5sv9qo foreign key (guide_id) references guide (id)
+06:04:08,691 DEBUG SQL:127 - insert into guide (name, salary, staff_id) values (?, ?, ?)
+06:04:08,706 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Mike Lawson]
+06:04:08,707 TRACE BasicBinder:64 - binding parameter [2] as [INTEGER] - [1000]
+06:04:08,707 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [2000MO10789]
+06:04:08,720 DEBUG SQL:127 - insert into student (enrollment_id, guide_id, name) values (?, ?, ?)
+06:04:08,721 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [2014JT50123]
+06:04:08,722 TRACE BasicBinder:64 - binding parameter [2] as [BIGINT] - [1]
+06:04:08,722 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [John Smith]
