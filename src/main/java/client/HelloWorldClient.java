@@ -44,12 +44,18 @@ public class HelloWorldClient {
 //			session.save(person);
 			
 			/* Many Students to one Guide */
-			Guide guide = new Guide("2000MO10789", "Mike Lawson", 1000);
-			Student student = new Student("2014JT50123", "John Smith", guide);
+//			Guide guide = new Guide("2000MO10789", "Toby Flenderson", 1000);
+//			Student student = new Student("2014JT50123", "Johnny Bravo", guide);
+//			Student student2 = new Student("2082NJ50138", "Brett Favre", guide);
+//			
+//			session.persist(student); // Will persist guide object with it
+//			session.persist(student2);
 			
-			session.save(guide);
-			session.save(student);
-
+			// Delete student by using CascadeType.REMOVE
+			// When deleting student, delete guide as well, if not used by other student
+			Student brett = session.get(Student.class, 3L);
+			session.delete(brett);
+			
 			// Commit Transaction
 			txn.commit();
 		} catch (Exception ex) {

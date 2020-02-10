@@ -16,7 +16,7 @@ public class Student {
 
     private String name; // doesn't need @Column bc column name is "name" as well
 
-    @ManyToOne // many Students have one Guide
+    @ManyToOne(cascade={CascadeType.PERSIST}) // many Students have one Guide
     @JoinColumn(name="guide_id") // In student table, use guide_id (the primary key from guide table) as foreign key
     private Guide guide;
 
