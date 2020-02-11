@@ -587,3 +587,35 @@
 06:04:08,721 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [2014JT50123]
 06:04:08,722 TRACE BasicBinder:64 - binding parameter [2] as [BIGINT] - [1]
 06:04:08,722 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [John Smith]
+06:10:16,149 DEBUG SQL:127 - insert into guide (name, salary, staff_id) values (?, ?, ?)
+06:10:16,166 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Toby Flenderson]
+06:10:16,167 TRACE BasicBinder:64 - binding parameter [2] as [INTEGER] - [1000]
+06:10:16,167 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [2000MO10789]
+06:10:16,180 DEBUG SQL:127 - insert into student (enrollment_id, guide_id, name) values (?, ?, ?)
+06:10:16,181 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [2014JT50123]
+06:10:16,182 TRACE BasicBinder:64 - binding parameter [2] as [BIGINT] - [2]
+06:10:16,183 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [Johnny Bravo]
+06:10:16,185 DEBUG SQL:127 - insert into student (enrollment_id, guide_id, name) values (?, ?, ?)
+06:10:16,186 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [2082NJ50138]
+06:10:16,186 TRACE BasicBinder:64 - binding parameter [2] as [BIGINT] - [2]
+06:10:16,187 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [Brett Favre]
+06:15:43,185 DEBUG SQL:127 - select student0_.id as id1_2_0_, student0_.enrollment_id as enrollme2_2_0_, student0_.guide_id as guide_id4_2_0_, student0_.name as name3_2_0_, guide1_.id as id1_0_1_, guide1_.name as name2_0_1_, guide1_.salary as salary3_0_1_, guide1_.staff_id as staff_id4_0_1_ from student student0_ left outer join guide guide1_ on student0_.guide_id=guide1_.id where student0_.id=?
+06:15:43,202 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [3]
+06:15:43,246 DEBUG SQL:127 - delete from student where id=?
+06:15:43,247 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [3]
+05:45:36,048 DEBUG SQL:127 - insert into guide (name, salary, staff_id) values (?, ?, ?)
+05:45:36,062 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [MATT MALLETT]
+05:45:36,063 TRACE BasicBinder:64 - binding parameter [2] as [INTEGER] - [10000]
+05:45:36,064 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [200238ME0281]
+05:45:36,087 DEBUG SQL:127 - insert into student (enrollment_id, guide_id, name) values (?, ?, ?)
+05:45:36,087 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [238AKDK2929]
+05:45:36,088 TRACE BasicBinder:64 - binding parameter [2] as [BIGINT] - [3]
+05:45:36,088 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [ZACH HICKS]
+05:45:36,093 DEBUG SQL:127 - insert into guide (name, salary, staff_id) values (?, ?, ?)
+05:45:36,093 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [BILLY RUBEN]
+05:45:36,093 TRACE BasicBinder:64 - binding parameter [2] as [INTEGER] - [10023]
+05:45:36,094 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [38238AWK2329]
+05:45:36,096 DEBUG SQL:127 - insert into student (enrollment_id, guide_id, name) values (?, ?, ?)
+05:45:36,097 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [2022NJ50138]
+05:45:36,097 TRACE BasicBinder:64 - binding parameter [2] as [BIGINT] - [4]
+05:45:36,097 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [MARCELA MALLETT]

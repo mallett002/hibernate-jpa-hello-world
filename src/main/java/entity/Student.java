@@ -16,9 +16,16 @@ public class Student {
 
     private String name; // doesn't need @Column bc column name is "name" as well
 
-    @ManyToOne // many Students have one Guide
+    // Owner of relationship: Has ManyToOne, and holds primary key of guide (guide's foreign key) in DB
+    @ManyToOne(cascade={CascadeType.PERSIST, CascadeType.REMOVE}) // many Students have one Guide
     @JoinColumn(name="guide_id") // In student table, use guide_id (the primary key from guide table) as foreign key
     private Guide guide;
+    
+    public Guide getGuide() {return this.guide;}
+    
+    public void setGuide(Guide guide) {
+    	this.guide = guide;
+    }
 
     public Student() {}
 

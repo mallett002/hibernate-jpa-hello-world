@@ -44,12 +44,33 @@ public class HelloWorldClient {
 //			session.save(person);
 			
 			/* Many Students to one Guide */
-			Guide guide = new Guide("2000MO10789", "Mike Lawson", 1000);
-			Student student = new Student("2014JT50123", "John Smith", guide);
+//			Guide guide = new Guide("2000MO10789", "Toby Flenderson", 1000);
+//			Student student = new Student("2014JT50123", "Johnny Bravo", guide);
+//			Student student2 = new Student("2082NJ50138", "Brett Favre", guide);
+//			
+//			session.persist(student); // Will persist guide object with it
+//			session.persist(student2);
 			
-			session.save(guide);
-			session.save(student);
-
+			// Delete student by using CascadeType.REMOVE
+			// When deleting student, delete guide as well, if not used by other student
+			/*Student brett = session.get(Student.class, 3L);
+			session.delete(brett);*/
+			
+			/* MANY TO ONE PERSISTENCE */
+			Guide guide1 = new Guide("200238ME0281", "MATT MALLETT", 10000);
+			Guide guide2 = new Guide("38238AWK2329", "BILLY RUBEN", 10023);
+			
+			Student student1 = new Student("238AKDK2929", "ZACH HICKS", guide1);
+			Student student2 = new Student("2022NJ50138", "MARCELA MALLETT", guide2);
+			
+			guide1.getStudents().add(student1);
+			guide2.getStudents().add(student2);
+			
+			// Since the guide has ManyToOne cascade persist, the student will be persisted alongside
+			session.persist(guide1);
+			session.persist(guide2);
+			
+			
 			// Commit Transaction
 			txn.commit();
 		} catch (Exception ex) {
