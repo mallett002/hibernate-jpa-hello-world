@@ -53,8 +53,23 @@ public class HelloWorldClient {
 			
 			// Delete student by using CascadeType.REMOVE
 			// When deleting student, delete guide as well, if not used by other student
-			Student brett = session.get(Student.class, 3L);
-			session.delete(brett);
+			/*Student brett = session.get(Student.class, 3L);
+			session.delete(brett);*/
+			
+			/* MANY TO ONE PERSISTENCE */
+			Guide guide1 = new Guide("200238ME0281", "MATT MALLETT", 10000);
+			Guide guide2 = new Guide("38238AWK2329", "BILLY RUBEN", 10023);
+			
+			Student student1 = new Student("238AKDK2929", "ZACH HICKS", guide1);
+			Student student2 = new Student("2022NJ50138", "MARCELA MALLETT", guide2);
+			
+			guide1.getStudents().add(student1);
+			guide2.getStudents().add(student2);
+			
+			// Since the guide has ManyToOne cascade persist, the student will be persisted alongside
+			session.persist(guide1);
+			session.persist(guide2);
+			
 			
 			// Commit Transaction
 			txn.commit();
