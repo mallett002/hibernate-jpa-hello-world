@@ -27,7 +27,7 @@ public class Guide {
     private Integer salary;
     
     // one guide has many students
-    // "guide" in Student class maps "students" here
+    // "guide" in Student class sets "students" here
     @OneToMany(mappedBy="guide", cascade={CascadeType.PERSIST}) // Not the owner. mappedBy "guide" in Student class
     private Set<Student> students = new HashSet<Student>();
     

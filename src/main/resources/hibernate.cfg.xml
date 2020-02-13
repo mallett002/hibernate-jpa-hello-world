@@ -26,6 +26,8 @@
 		<mapping class="entity.Person" />
 		<mapping class="entity.Guide" />
 		<mapping class="entity.Student" />
+		<mapping class="entity.Customer" />
+		<mapping class="entity.Passport" />
 	</session-factory>
 
 </hibernate-configuration>

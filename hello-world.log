@@ -619,3 +619,27 @@
 05:45:36,097 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [2022NJ50138]
 05:45:36,097 TRACE BasicBinder:64 - binding parameter [2] as [BIGINT] - [4]
 05:45:36,097 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [MARCELA MALLETT]
+06:05:15,541 DEBUG SQL:127 - select guide0_.id as id1_0_0_, guide0_.name as name2_0_0_, guide0_.salary as salary3_0_0_, guide0_.staff_id as staff_id4_0_0_ from guide guide0_ where guide0_.id=?
+06:05:15,563 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [2]
+06:05:15,589 DEBUG SQL:127 - select student0_.id as id1_2_0_, student0_.enrollment_id as enrollme2_2_0_, student0_.guide_id as guide_id4_2_0_, student0_.name as name3_2_0_, guide1_.id as id1_0_1_, guide1_.name as name2_0_1_, guide1_.salary as salary3_0_1_, guide1_.staff_id as staff_id4_0_1_ from student student0_ left outer join guide guide1_ on student0_.guide_id=guide1_.id where student0_.id=?
+06:05:15,590 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [1]
+06:05:15,599 DEBUG SQL:127 - select students0_.guide_id as guide_id4_2_0_, students0_.id as id1_2_0_, students0_.id as id1_2_1_, students0_.enrollment_id as enrollme2_2_1_, students0_.guide_id as guide_id4_2_1_, students0_.name as name3_2_1_ from student students0_ where students0_.guide_id=?
+06:05:15,600 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [2]
+06:05:15,631 DEBUG SQL:127 - update student set enrollment_id=?, guide_id=?, name=? where id=?
+06:05:15,633 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [2014JT50123]
+06:05:15,633 TRACE BasicBinder:64 - binding parameter [2] as [BIGINT] - [2]
+06:05:15,634 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [John Smith]
+06:05:15,634 TRACE BasicBinder:64 - binding parameter [4] as [BIGINT] - [1]
+18:07:47,006 DEBUG SQL:127 - create table Customer (id bigint not null auto_increment, name varchar(255), passport_id bigint, primary key (id)) type=MyISAM
+18:07:47,015 DEBUG SQL:127 - create table Passport (id bigint not null auto_increment, passport_number varchar(255), primary key (id)) type=MyISAM
+18:07:47,019 DEBUG SQL:127 - alter table Customer drop index UK_eqsqcfe0n0al6jf5ewnx392nl
+18:07:47,059 DEBUG SQL:127 - alter table Customer add constraint UK_eqsqcfe0n0al6jf5ewnx392nl unique (passport_id)
+18:07:47,063 DEBUG SQL:127 - alter table Customer add constraint FK55lqk21ofiw00596jpwlc0r07 foreign key (passport_id) references Passport (id)
+18:07:47,309 DEBUG SQL:127 - insert into Passport (passport_number) values (?)
+18:07:47,334 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [92388382]
+18:16:25,298 DEBUG SQL:127 - alter table Customer add constraint FK55lqk21ofiw00596jpwlc0r07 foreign key (passport_id) references Passport (id)
+18:16:25,714 DEBUG SQL:127 - insert into Passport (passport_number) values (?)
+18:16:25,731 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [92388382]
+18:16:25,741 DEBUG SQL:127 - insert into Customer (name, passport_id) values (?, ?)
+18:16:25,742 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Nicole Scott]
+18:16:25,743 TRACE BasicBinder:64 - binding parameter [2] as [BIGINT] - [1]
