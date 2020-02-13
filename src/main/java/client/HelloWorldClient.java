@@ -3,11 +3,8 @@ package client;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import entity.Address;
-import entity.Guide;
-import entity.Message;
-import entity.Person;
-import entity.Student;
+import entity.Customer;
+import entity.Passport;
 import util.HibernateUtil;
 
 public class HelloWorldClient {
@@ -57,20 +54,30 @@ public class HelloWorldClient {
 			session.delete(brett);*/
 			
 			/* MANY TO ONE PERSISTENCE */
-			Guide guide1 = new Guide("200238ME0281", "MATT MALLETT", 10000);
-			Guide guide2 = new Guide("38238AWK2329", "BILLY RUBEN", 10023);
+//			Guide guide1 = new Guide("200238ME0281", "MATT MALLETT", 10000);
+//			Guide guide2 = new Guide("38238AWK2329", "BILLY RUBEN", 10023);
+//			
+//			Student student1 = new Student("238AKDK2929", "ZACH HICKS", guide1);
+//			Student student2 = new Student("2022NJ50138", "MARCELA MALLETT", guide2);
+//			
+//			guide1.getStudents().add(student1);
+//			guide2.getStudents().add(student2);
+//			
+//			// Since the guide has ManyToOne cascade persist, the student will be persisted alongside
+//			session.persist(guide1);
+//			session.persist(guide2);
 			
-			Student student1 = new Student("238AKDK2929", "ZACH HICKS", guide1);
-			Student student2 = new Student("2022NJ50138", "MARCELA MALLETT", guide2);
+			// updating inverse end (from the guide). Guide is not owner of rel
+//			Guide guide = session.get(Guide.class, 2L);
+//			Student student = session.get(Student.class, 1L);
+//			guide.addStudent(student); // will be reflected in DB
 			
-			guide1.getStudents().add(student1);
-			guide2.getStudents().add(student2);
-			
-			// Since the guide has ManyToOne cascade persist, the student will be persisted alongside
-			session.persist(guide1);
-			session.persist(guide2);
-			
-			
+			/*ONE TO ONE MAPPING*/
+			Passport passport = new Passport("92388382");
+			Customer customer = new Customer("Nicole Scott", passport);
+			session.persist(customer); // persist the owner of the rel, cascade type persist takes care of passport
+
+
 			// Commit Transaction
 			txn.commit();
 		} catch (Exception ex) {
