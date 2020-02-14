@@ -643,3 +643,69 @@
 18:16:25,741 DEBUG SQL:127 - insert into Customer (name, passport_id) values (?, ?)
 18:16:25,742 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Nicole Scott]
 18:16:25,743 TRACE BasicBinder:64 - binding parameter [2] as [BIGINT] - [1]
+18:35:15,752 DEBUG SQL:127 - create table hibernate_sequence (next_val bigint) type=MyISAM
+18:35:15,759 DEBUG SQL:127 - insert into hibernate_sequence values ( 1 )
+18:35:15,761 DEBUG SQL:127 - insert into hibernate_sequence values ( 1 )
+18:35:15,765 DEBUG SQL:127 - create table movie_actor (movie_id bigint not null, actor_id bigint not null, primary key (movie_id, actor_id)) type=MyISAM
+18:35:15,806 DEBUG SQL:127 - alter table movie_actor add constraint FK2anlx6ycvy2nlm1o0ga9glpmu foreign key (actor_id) references Actor (id)
+18:35:15,810 DEBUG SQL:127 - alter table movie_actor add constraint FKi17y5929b8lhmtay3g1wo76e2 foreign key (movie_id) references Movie (id)
+18:35:15,967 DEBUG SQL:127 - insert into Passport (passport_number) values (?)
+18:35:15,984 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [92388382]
+18:35:16,007 DEBUG SQL:127 - insert into Customer (name, passport_id) values (?, ?)
+18:35:16,008 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Nicole Scott]
+18:35:16,009 TRACE BasicBinder:64 - binding parameter [2] as [BIGINT] - [2]
+18:36:49,791 DEBUG SQL:127 - create table hibernate_sequence (next_val bigint) type=MyISAM
+18:36:49,797 DEBUG SQL:127 - insert into hibernate_sequence values ( 1 )
+18:36:49,800 DEBUG SQL:127 - insert into hibernate_sequence values ( 1 )
+18:36:49,803 DEBUG SQL:127 - create table movie_actor (movie_id bigint not null, actor_id bigint not null, primary key (movie_id, actor_id)) type=MyISAM
+18:36:49,834 DEBUG SQL:127 - alter table movie_actor add constraint FK2anlx6ycvy2nlm1o0ga9glpmu foreign key (actor_id) references Actor (id)
+18:36:49,837 DEBUG SQL:127 - alter table movie_actor add constraint FKi17y5929b8lhmtay3g1wo76e2 foreign key (movie_id) references Movie (id)
+18:36:50,036 DEBUG SQL:127 - select next_val as id_val from hibernate_sequence for update
+18:39:27,161 DEBUG SQL:127 - create table movie_actor (movie_id bigint not null, actor_id bigint not null, primary key (movie_id, actor_id)) type=MyISAM
+18:39:27,194 DEBUG SQL:127 - alter table movie_actor add constraint FK2anlx6ycvy2nlm1o0ga9glpmu foreign key (actor_id) references Actor (id)
+18:39:27,198 DEBUG SQL:127 - alter table movie_actor add constraint FKi17y5929b8lhmtay3g1wo76e2 foreign key (movie_id) references Movie (id)
+18:39:27,353 DEBUG SQL:127 - insert into Movie (name) values (?)
+18:39:27,367 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [American Hustle]
+18:39:27,378 DEBUG SQL:127 - insert into Actor (name) values (?)
+18:39:27,379 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Christian Bale]
+18:39:27,382 DEBUG SQL:127 - insert into Movie (name) values (?)
+18:39:27,382 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [The Prestige]
+18:39:27,384 DEBUG SQL:127 - insert into Actor (name) values (?)
+18:39:27,385 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Hugh Jackman]
+18:39:27,412 DEBUG SQL:127 - insert into movie_actor (movie_id, actor_id) values (?, ?)
+18:39:27,413 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [1]
+18:39:27,414 TRACE BasicBinder:64 - binding parameter [2] as [BIGINT] - [1]
+18:41:55,428 DEBUG SQL:127 - alter table movie_actor add constraint FK2anlx6ycvy2nlm1o0ga9glpmu foreign key (actor_id) references Actor (id)
+18:41:55,545 DEBUG SQL:127 - alter table movie_actor add constraint FKi17y5929b8lhmtay3g1wo76e2 foreign key (movie_id) references Movie (id)
+18:41:55,770 DEBUG SQL:127 - insert into Movie (name) values (?)
+18:41:55,785 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [American Hustle]
+18:41:55,793 DEBUG SQL:127 - insert into Actor (name) values (?)
+18:41:55,794 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Christian Bale]
+18:41:55,797 DEBUG SQL:127 - insert into Movie (name) values (?)
+18:41:55,797 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [The Prestige]
+18:41:55,799 DEBUG SQL:127 - insert into Actor (name) values (?)
+18:41:55,800 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [Hugh Jackman]
+18:41:55,817 DEBUG SQL:127 - insert into movie_actor (movie_id, actor_id) values (?, ?)
+18:41:55,817 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [3]
+18:41:55,818 TRACE BasicBinder:64 - binding parameter [2] as [BIGINT] - [3]
+18:41:55,819 DEBUG SQL:127 - insert into movie_actor (movie_id, actor_id) values (?, ?)
+18:41:55,819 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [4]
+18:41:55,820 TRACE BasicBinder:64 - binding parameter [2] as [BIGINT] - [3]
+18:41:55,821 DEBUG SQL:127 - insert into movie_actor (movie_id, actor_id) values (?, ?)
+18:41:55,822 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [4]
+18:41:55,822 TRACE BasicBinder:64 - binding parameter [2] as [BIGINT] - [4]
+18:47:10,849 DEBUG SQL:127 - select movie0_.id as id1_3_0_, movie0_.name as name2_3_0_ from Movie movie0_ where movie0_.id=?
+18:47:10,869 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [3]
+18:47:10,896 DEBUG SQL:127 - select actor0_.id as id1_0_0_, actor0_.name as name2_0_0_ from Actor actor0_ where actor0_.id=?
+18:47:10,897 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [4]
+18:47:10,901 DEBUG SQL:127 - select movies0_.actor_id as actor_id2_4_0_, movies0_.movie_id as movie_id1_4_0_, movie1_.id as id1_3_1_, movie1_.name as name2_3_1_ from movie_actor movies0_ inner join Movie movie1_ on movies0_.movie_id=movie1_.id where movies0_.actor_id=?
+18:47:10,902 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [4]
+18:50:40,103 DEBUG SQL:127 - select movie0_.id as id1_3_0_, movie0_.name as name2_3_0_ from Movie movie0_ where movie0_.id=?
+18:50:40,124 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [3]
+18:50:40,154 DEBUG SQL:127 - select actor0_.id as id1_0_0_, actor0_.name as name2_0_0_ from Actor actor0_ where actor0_.id=?
+18:50:40,155 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [4]
+18:50:40,161 DEBUG SQL:127 - select actors0_.movie_id as movie_id1_4_0_, actors0_.actor_id as actor_id2_4_0_, actor1_.id as id1_0_1_, actor1_.name as name2_0_1_ from movie_actor actors0_ inner join Actor actor1_ on actors0_.actor_id=actor1_.id where actors0_.movie_id=?
+18:50:40,162 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [3]
+18:50:40,204 DEBUG SQL:127 - insert into movie_actor (movie_id, actor_id) values (?, ?)
+18:50:40,205 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [3]
+18:50:40,206 TRACE BasicBinder:64 - binding parameter [2] as [BIGINT] - [4]
