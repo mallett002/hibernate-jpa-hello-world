@@ -3,8 +3,8 @@ package client;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import entity.Actor;
-import entity.Movie;
+import entity.Employee;
+import entity.EmployeeStatus;
 import util.HibernateUtil;
 
 public class HelloWorldClient {
@@ -93,11 +93,24 @@ public class HelloWorldClient {
 //			session.persist(thePrestige);
 			
 			// try to update from inverse end: Actor -> Movie
-			Movie movie = session.get(Movie.class, 3L);
-			Actor actor = session.get(Actor.class, 4L);
-//			actor.getMovies().add(movie); // Will be ignored. Not the owner
-			movie.getActors().add(actor); // Will work since movie is owner of rel
-
+//			Movie movie = session.get(Movie.class, 3L);
+//			Actor actor = session.get(Actor.class, 4L);
+////			actor.getMovies().add(movie); // Will be ignored. Not the owner
+//			movie.getActors().add(actor); // Will work since movie is owner of rel
+			
+			/*PERSISTING ENUMS*/
+//			Employee josh = new Employee("Josh Stockham", "312K113J1JD", EmployeeStatus.FULL_TIME);
+//			Employee ammie = new Employee("Ammie Corrio", "32KKAIEDI14", EmployeeStatus.PART_TIME);
+//			Employee ernie = new Employee("Ernie Stenseth", "247001KKDIEMC", EmployeeStatus.CONTRACT);
+//
+//			session.persist(josh);
+//			session.persist(ammie);
+//			session.persist(ernie);
+			
+			// Retrieving entity with enum from DB
+			Employee ammie = session.get(Employee.class, 2L);
+			System.out.println(ammie);
+			
 			// Commit Transaction
 			txn.commit();
 		} catch (Exception ex) {
