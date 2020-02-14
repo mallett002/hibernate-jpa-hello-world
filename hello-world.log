@@ -709,3 +709,21 @@
 18:50:40,204 DEBUG SQL:127 - insert into movie_actor (movie_id, actor_id) values (?, ?)
 18:50:40,205 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [3]
 18:50:40,206 TRACE BasicBinder:64 - binding parameter [2] as [BIGINT] - [4]
+05:52:55,938 DEBUG SQL:127 - insert into Employee (employee_id, employee_status, name) values (?, ?, ?)
+05:52:55,994 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [312K113J1JD]
+05:52:55,995 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [FULL_TIME]
+05:52:55,997 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [Josh Stockham]
+05:54:20,798 DEBUG SQL:127 - insert into Employee (employee_id, employee_status, name) values (?, ?, ?)
+05:54:20,812 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [312K113J1JD]
+05:54:20,812 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [FULL_TIME]
+05:54:20,812 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [Josh Stockham]
+05:54:20,820 DEBUG SQL:127 - insert into Employee (employee_id, employee_status, name) values (?, ?, ?)
+05:54:20,820 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [32KKAIEDI14]
+05:54:20,820 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [PART_TIME]
+05:54:20,820 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [Ammie Corrio]
+05:54:20,822 DEBUG SQL:127 - insert into Employee (employee_id, employee_status, name) values (?, ?, ?)
+05:54:20,823 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [247001KKDIEMC]
+05:54:20,823 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [CONTRACT]
+05:54:20,824 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [Ernie Stenseth]
+05:59:10,626 DEBUG SQL:127 - select employee0_.id as id1_2_0_, employee0_.employee_id as employee2_2_0_, employee0_.employee_status as employee3_2_0_, employee0_.name as name4_2_0_ from Employee employee0_ where employee0_.id=?
+05:59:10,651 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [2]
