@@ -3,8 +3,8 @@ package client;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import entity.Customer;
-import entity.Passport;
+import entity.Actor;
+import entity.Movie;
 import util.HibernateUtil;
 
 public class HelloWorldClient {
@@ -73,10 +73,30 @@ public class HelloWorldClient {
 //			guide.addStudent(student); // will be reflected in DB
 			
 			/*ONE TO ONE MAPPING*/
-			Passport passport = new Passport("92388382");
-			Customer customer = new Customer("Nicole Scott", passport);
-			session.persist(customer); // persist the owner of the rel, cascade type persist takes care of passport
+//			Passport passport = new Passport("92388382");
+//			Customer customer = new Customer("Nicole Scott", passport);
+//			session.persist(customer); // persist the owner of the rel, cascade type persist takes care of passport
 
+			/*MANY TO MANY*/
+//			Movie americanHustle = new Movie("American Hustle");
+//			Movie thePrestige = new Movie("The Prestige");
+//
+//			Actor bale = new Actor("Christian Bale");
+//			Actor jackman = new Actor("Hugh Jackman");
+//			
+//			americanHustle.getActors().add(bale);
+//			
+//			thePrestige.getActors().add(bale);
+//			thePrestige.getActors().add(jackman);
+//
+//			session.persist(americanHustle);
+//			session.persist(thePrestige);
+			
+			// try to update from inverse end: Actor -> Movie
+			Movie movie = session.get(Movie.class, 3L);
+			Actor actor = session.get(Actor.class, 4L);
+//			actor.getMovies().add(movie); // Will be ignored. Not the owner
+			movie.getActors().add(actor); // Will work since movie is owner of rel
 
 			// Commit Transaction
 			txn.commit();
