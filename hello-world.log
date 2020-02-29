@@ -727,3 +727,63 @@
 05:54:20,824 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [Ernie Stenseth]
 05:59:10,626 DEBUG SQL:127 - select employee0_.id as id1_2_0_, employee0_.employee_id as employee2_2_0_, employee0_.employee_status as employee3_2_0_, employee0_.name as name4_2_0_ from Employee employee0_ where employee0_.id=?
 05:59:10,651 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [2]
+11:22:47,752 DEBUG SQL:127 - create table Friend (id bigint not null auto_increment, email varchar(255), name varchar(255), primary key (id)) type=MyISAM
+11:22:47,759 DEBUG SQL:127 - create table friend_nickname (friend_id bigint not null, nickname varchar(255)) type=MyISAM
+11:22:47,791 DEBUG SQL:127 - alter table friend_nickname add constraint FKpixoluhljcijjlk9ystlg1l7h foreign key (friend_id) references Friend (id)
+11:22:47,990 DEBUG SQL:127 - insert into Friend (email, name) values (?, ?)
+11:22:48,005 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [markanderson@pluswhere.com]
+11:22:48,006 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [Mark Anderson]
+11:24:30,188 DEBUG SQL:127 - create table friend_nickname (friend_id bigint not null, nickname varchar(255)) type=MyISAM
+11:24:30,221 DEBUG SQL:127 - alter table friend_nickname add constraint FKpixoluhljcijjlk9ystlg1l7h foreign key (friend_id) references Friend (id)
+11:24:30,400 DEBUG SQL:127 - insert into Friend (email, name) values (?, ?)
+11:24:30,418 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [markanderson@pluswhere.com]
+11:24:30,419 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [Mark Anderson]
+11:24:30,456 DEBUG SQL:127 - insert into friend_nickname (friend_id, nickname) values (?, ?)
+11:24:30,457 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [1]
+11:24:30,458 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [Marky]
+11:30:54,199 DEBUG SQL:127 - create table friend_nickname (friend_id bigint not null, nickname varchar(255)) type=MyISAM
+11:30:54,234 DEBUG SQL:127 - alter table friend_nickname add constraint FKpixoluhljcijjlk9ystlg1l7h foreign key (friend_id) references Friend (id)
+11:30:54,432 DEBUG SQL:127 - insert into Friend (email, name) values (?, ?)
+11:30:54,458 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [markanderson@pluswhere.com]
+11:30:54,459 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [Mark Anderson]
+11:30:54,537 DEBUG SQL:127 - insert into friend_nickname (friend_id, nickname) values (?, ?)
+11:30:54,539 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [2]
+11:30:54,547 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [Marky]
+11:31:26,513 DEBUG SQL:127 - alter table friend_nickname add constraint FKpixoluhljcijjlk9ystlg1l7h foreign key (friend_id) references Friend (id)
+11:31:26,806 DEBUG SQL:127 - insert into Friend (email, name) values (?, ?)
+11:31:26,818 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [markanderson@pluswhere.com]
+11:31:26,819 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [Mark Anderson]
+11:31:26,844 DEBUG SQL:127 - insert into friend_nickname (friend_id, nickname) values (?, ?)
+11:31:26,845 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [3]
+11:31:26,846 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [Marky]
+11:31:26,848 DEBUG SQL:127 - insert into friend_nickname (friend_id, nickname) values (?, ?)
+11:31:26,849 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [3]
+11:31:26,849 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [Marco]
+11:31:26,852 DEBUG SQL:127 - insert into friend_nickname (friend_id, nickname) values (?, ?)
+11:31:26,852 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [3]
+11:31:26,853 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [Markster]
+11:39:15,182 DEBUG SQL:127 - select friend0_.id as id1_3_0_, friend0_.email as email2_3_0_, friend0_.name as name3_3_0_ from Friend friend0_ where friend0_.id=?
+11:39:15,200 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [1]
+11:39:49,382 DEBUG SQL:127 - select friend0_.id as id1_3_0_, friend0_.email as email2_3_0_, friend0_.name as name3_3_0_ from Friend friend0_ where friend0_.id=?
+11:39:49,406 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [1]
+11:40:06,266 DEBUG SQL:127 - select friend0_.id as id1_3_0_, friend0_.email as email2_3_0_, friend0_.name as name3_3_0_ from Friend friend0_ where friend0_.id=?
+11:40:06,284 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [1]
+11:40:39,136 DEBUG SQL:127 - select friend0_.id as id1_3_0_, friend0_.email as email2_3_0_, friend0_.name as name3_3_0_ from Friend friend0_ where friend0_.id=?
+11:40:39,159 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [3]
+11:40:39,190 DEBUG SQL:127 - select nicknames0_.friend_id as friend_i1_4_0_, nicknames0_.nickname as nickname2_4_0_ from friend_nickname nicknames0_ where nicknames0_.friend_id=?
+11:40:39,191 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [3]
+17:06:18,863 DEBUG SQL:127 - alter table friend_address add constraint FK5gvb8qxmul8tlhoboxv7sj8xu foreign key (friend_id) references Friend (id)
+17:06:19,176 DEBUG SQL:127 - insert into Friend (email, name) values (?, ?)
+17:06:19,192 TRACE BasicBinder:64 - binding parameter [1] as [VARCHAR] - [tstark22@gmail.com]
+17:06:19,193 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [Tony Stark]
+17:06:19,222 DEBUG SQL:127 - insert into friend_address (friend_id, address_city, address_street, address_zipcode) values (?, ?, ?, ?)
+17:06:19,223 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [4]
+17:06:19,224 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [Sioux City]
+17:06:19,224 TRACE BasicBinder:64 - binding parameter [3] as [VARCHAR] - [1620 280th St]
+17:06:19,225 TRACE BasicBinder:64 - binding parameter [4] as [VARCHAR] - [55110]
+17:06:19,229 DEBUG SQL:127 - insert into friend_nickname (friend_id, nickname) values (?, ?)
+17:06:19,230 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [4]
+17:06:19,234 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [TDogg]
+17:06:19,239 DEBUG SQL:127 - insert into friend_nickname (friend_id, nickname) values (?, ?)
+17:06:19,240 TRACE BasicBinder:64 - binding parameter [1] as [BIGINT] - [4]
+17:06:19,240 TRACE BasicBinder:64 - binding parameter [2] as [VARCHAR] - [TMoney]
