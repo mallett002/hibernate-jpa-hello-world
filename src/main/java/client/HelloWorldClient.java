@@ -3,8 +3,10 @@ package client;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import entity.Address;
 import entity.Employee;
 import entity.EmployeeStatus;
+import entity.Friend;
 import util.HibernateUtil;
 
 public class HelloWorldClient {
@@ -108,8 +110,38 @@ public class HelloWorldClient {
 //			session.persist(ernie);
 			
 			// Retrieving entity with enum from DB
-			Employee ammie = session.get(Employee.class, 2L);
-			System.out.println(ammie);
+//			Employee ammie = session.get(Employee.class, 2L);
+//			System.out.println(ammie);
+			
+			/*MAPPING COLLECTIONS*/
+//			Friend friend = new Friend("Mark Anderson", "markanderson@pluswhere.com");
+//			
+//			// Add nicknames
+//			friend.getNickNames().add("Marky");
+//			friend.getNickNames().add("Marco");
+//			friend.getNickNames().add("Markster");
+//			
+//			// persist data
+//			session.persist(friend);
+
+			// Retrieving data
+//			Friend friend = session.get(Friend.class, 3L);
+//			System.out.println(friend);
+			
+			// Mapping collection of Embeddable
+			// make friend
+			Friend friend = new Friend("Tony Stark", "tstark22@gmail.com");
+			
+			// add address
+			Address friendAddress = new Address("1620 280th St", "Sioux City", "55110");
+			friend.getAddresses().add(friendAddress);
+			
+			// add nicknames
+			friend.getNickNames().add("TDogg");
+			friend.getNickNames().add("TMoney");
+			
+			// persist
+			session.persist(friend);
 			
 			// Commit Transaction
 			txn.commit();
