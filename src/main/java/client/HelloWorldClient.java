@@ -3,10 +3,7 @@ package client;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import entity.Address;
-import entity.Employee;
-import entity.EmployeeStatus;
-import entity.Friend;
+import entity.*;
 import util.HibernateUtil;
 
 public class HelloWorldClient {
@@ -130,18 +127,31 @@ public class HelloWorldClient {
 			
 			// Mapping collection of Embeddable
 			// make friend
-			Friend friend = new Friend("Tony Stark", "tstark22@gmail.com");
+//			Friend friend = new Friend("Tony Stark", "tstark22@gmail.com");
+//			
+//			// add address
+//			Address friendAddress = new Address("1620 280th St", "Sioux City", "55110");
+//			friend.getAddresses().add(friendAddress);
+//			
+//			// add nicknames
+//			friend.getNickNames().add("TDogg");
+//			friend.getNickNames().add("TMoney");
+//			
+//			// persist
+//			session.persist(friend);
 			
-			// add address
-			Address friendAddress = new Address("1620 280th St", "Sioux City", "55110");
-			friend.getAddresses().add(friendAddress);
+			/*USING COMPOSITE KEYS (Not recommended, but could be legacy code*/
+			// Persist
+			ParentPrimaryKey ppk = new ParentPrimaryKey("Charlotte", "Crawford");
+			Parent parent = new Parent(ppk);
 			
-			// add nicknames
-			friend.getNickNames().add("TDogg");
-			friend.getNickNames().add("TMoney");
+			Child child1 = new Child("Ruby");
+			Child child2 = new Child("Groovy");
 			
-			// persist
-			session.persist(friend);
+			parent.addChild(child1);
+			parent.addChild(child2);
+			
+			session.persist(parent);
 			
 			// Commit Transaction
 			txn.commit();
